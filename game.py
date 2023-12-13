@@ -127,12 +127,6 @@ def main():
                 clicked_row = mouse_x // CELL_SIZE
                 clicked_col = mouse_y // CELL_SIZE
 
-                # Сюда нужно дописать код:
-                # Если ячейка свободна,
-                    # то сделать ход,
-                    # проверить на победу,
-                    # проверить на ничью,
-                    # сменить игрока.
                 if game.board[clicked_row][clicked_col] == ' ':
                     game.make_move(clicked_row, clicked_col, current_player)
 
