@@ -15,12 +15,12 @@ class Board:
         переданным при вызове метода.'''
         self.board[row][col] = player
 
-    def display(self):
-        '''Отрисовывает игровое поле в консоли,
-        согласно шаблону __init__.'''
-        for row in self.board:
-            print('|'.join(row))
-            print('-' * 5)
+    # def display(self):
+    #     '''Отрисовывает игровое поле в консоли,
+    #     согласно шаблону __init__.'''
+    #     for row in self.board:
+    #         print('|'.join(row))
+    #         print('-' * 5)
 
     def is_board_full(self):
         for i in range(self.field_size):
